@@ -7,7 +7,7 @@ import pygame
 
 class Action(Enum):
     QUIT = 0
-    MENU_ACCEPT = 1
+    MENU_SELECT = 1
     MENU_UP = 2
     MENU_DOWN = 3
 
@@ -25,8 +25,8 @@ EVENT_TO_ACTION_MAPPING: Final[Dict[int, Action]] = {
 }
 
 KEY_TO_ACTION_MAPPING: Final[Dict[int, Action]] = {
-    pygame.K_RETURN: Action.MENU_ACCEPT,
-    pygame.K_KP_ENTER: Action.MENU_ACCEPT,
+    pygame.K_RETURN: Action.MENU_SELECT,
+    pygame.K_KP_ENTER: Action.MENU_SELECT,
     pygame.K_UP: Action.MENU_UP,
     pygame.K_DOWN: Action.MENU_DOWN,
 }
