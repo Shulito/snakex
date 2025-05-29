@@ -6,7 +6,7 @@ from src.interactions import Action, get_interactions
 from src.notifications import NotificationSink
 from src.screens import ScreenManager
 
-#comentario prueba
+#comentario prueb
 class Game:
     def __init__(self) -> None:
         pygame.init()
