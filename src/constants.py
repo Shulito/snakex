@@ -26,9 +26,17 @@ GAME_OVER_SCREEN_NAME: Final[str] = "GAME_OVER"
 # Notification constants
 EXTRA_DATA_SCREEN_NAME: Final[str] = "SCREEN_NAME"
 
-# Content constants
+# Level constants
+WALL_CORNER_TOP_LEFT: Final[str] = "╔"
+WALL_CORNER_TOP_RIGHT: Final[str] = "╗"
+WALL_CORNER_BOTTOM_LEFT: Final[str] = "╚"
+WALL_CORNER_BOTTOM_RIGHT: Final[str] = "╝"
+WALL_HORIZONTAL: Final[str] = "═"
+
+# Assets constants
 ASSETS_FOLDER_PATH: Final[str] = path.abspath(
     path.join(path.dirname(__file__), "..", "assets")
 )
 
 SCREENS_FOLDER_PATH: Final[str] = path.join(ASSETS_FOLDER_PATH, "screens")
+LEVELS_FOLDER_PATH: Final[str] = path.join(ASSETS_FOLDER_PATH, "levels")
